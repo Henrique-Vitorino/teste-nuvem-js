@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+  <!-- Button to open the modal -->
+  <button onclick="openModal()">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+
+      <!-- Page 1 -->
+      <div class="modal-page" id="page1">
+        <p>This is page 1</p>
+      </div>
+
+      <!-- Page 2 -->
+      <div class="modal-page" id="page2" style="display:none;">
+        <p>This is page 2</p>
+      </div>
+
+      <!-- Navigation buttons -->
+      <button onclick="changePage(-1)">Previous</button>
+      <button onclick="changePage(1)">Next</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
